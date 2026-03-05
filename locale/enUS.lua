@@ -1,0 +1,135 @@
+local addonName, ns = ...
+ns.L = ns.L or {}
+local L = ns.L
+
+L["AddOn Description"] = "Customizes the font and text of Action Bars."
+L["Open Config"] = "Opening configuration window."
+L["Select Menu Instruction"] = "Please select a category from the left menu."
+
+-- 프로필 관련
+L["Profile Management"] = "Profile Management"
+L["Profile Desc"] = "Save or load different settings per character."
+L["Current Profile"] = "Current Profile: %s"
+L["Select Profile"] = "Select Profile"
+L["Create New Profile"] = "Create New Profile"
+L["Easy Profile Create"] = "Quick Create"
+L["Create Profile Format"] = "Create '%s'"
+L["Custom Profile Create"] = "Custom Name Create"
+L["New Profile Name"] = "New Profile Name"
+L["Create"] = "Create"
+L["Copy Profile"] = "Copy Profile"
+L["Select Profile To Copy"] = "Select Profile to Copy"
+L["Copy From Selected"] = "Copy from Selected"
+L["Reset Current Profile"] = "Reset Current Profile"
+L["Delete Current Profile"] = "Delete Current Profile"
+L["Profile Changed"] = "Profile changed to: %s"
+L["Profile Created"] = "Profile created: %s"
+L["Profile Copied"] = "Copied settings from '%s'."
+L["Profile Reset"] = "Current profile reset."
+L["Profile Deleted"] = "Profile deleted: %s"
+L["Default Cannot Delete"] = "Default profile cannot be deleted."
+L["Current Cannot Delete"] = "Cannot delete the currently active profile."
+L["Profile Name Exists"] = "Profile name already exists."
+L["Select Source First"] = "Please select a profile to copy from first."
+
+-- 팝업 메시지
+L["Reset Confirm Body"] = "Warning! The current profile will be reset to default settings.\nThis action cannot be undone.\n\nDo you want to proceed?"
+L["Delete Confirm Body"] = "Warning! The current profile will be deleted and switched to 'Default'.\nDeleted profiles cannot be recovered.\n\nDo you want to proceed?"
+L["Create Confirm Body"] = "Creating profile '%s'.\nHow would you like to proceed?"
+L["Copy Confirm Body"] = "Warning! This will overwrite current settings with settings from '%s'.\nThis action cannot be undone.\n\nDo you want to proceed?"
+L["Copy Settings"] = "Copy Current Settings"
+L["Create Default"] = "Create with Defaults"
+L["Confirm"] = "Confirm"
+L["Cancel"] = "Cancel"
+
+-- 스타일 설정 (공통)
+L["Initialize"] = "Reset"
+L["Font Select"] = "Font"
+L["Default Font"] = "Default Font"
+L["Font Size"] = "Size"
+L["Outline"] = "Outline"
+L["Thick Outline"] = "Thick Outline"
+L["Shadow"] = "Shadow"
+L["Position"] = "Position"
+L["Alignment"] = "Align"
+L["X Offset"] = "Horizontal (X)"
+L["Y Offset"] = "Vertical (Y)"
+L["Text Color"] = "Text Color"
+L["Color Normal"] = "Normal"
+L["Color OOR"] = "Out of Range"
+L["Color No Mana"] = "No Resource"
+L["Color Unusable"] = "Unusable"
+L["Use Hotkey Color"] = "Use Hotkey Color Settings"
+L["Style Reset Msg"] = "%s settings have been reset."
+
+-- 미리보기 텍스트
+L["Preview Hotkey"] = "123 ABC (Preview)"
+L["Preview Stack"] = "20 (Preview)"
+L["Preview Macro"] = "Macro (Preview)"
+
+-- 섹션 제목
+L["Hotkey Style"] = "Hotkey Style"
+L["Stack Style"] = "Stack Count Style"
+L["Macro Style"] = "Macro Name Style"
+L["Text Replace"] = "Text Replacement"
+L["Hide Text"] = "Hide Text"
+
+-- 텍스트 변경
+L["Enable Text Replace"] = "Enable Text Replacement"
+L["Modifiers"] = "Modifiers"
+L["Mouse"] = "Mouse"
+L["Function Keys"] = "Function Keys"
+L["Keypad"] = "Keypad"
+L["Text Replace Msg"] = "Text replacement settings applied."
+L["Text Replace Note"] = "* Changes require clicking 'Apply Settings' followed by 'Reload UI'."
+L["Apply Settings"] = "Apply Settings"
+L["Reload UI"] = "Reload UI"
+
+L["Allow Empty Text"] = "Allow Empty Text"
+L["Allow Empty Tooltip"] = "If enabled, you can leave the replacement text blank.\nBlank hotkeys will not be displayed."
+
+L["Arrow Keys"] = "Arrow Keys"
+L["Up Arrow"] = "Up Arrow"
+L["Down Arrow"] = "Down Arrow"
+L["Left Arrow"] = "Left Arrow"
+L["Right Arrow"] = "Right Arrow"
+
+-- 마우스 버튼 텍스트
+L["Mouse Wheel Up"] = "Wheel Up"
+L["Mouse Wheel Down"] = "Wheel Down"
+L["Mouse 3"] = "Mouse 3 (Middle)"
+L["Mouse 4"] = "Mouse 4"
+L["Mouse 5"] = "Mouse 5"
+L["Mouse 6"] = "Mouse 6"
+L["Mouse 7"] = "Mouse 7"
+L["Mouse 8"] = "Mouse 8"
+L["Mouse 9"] = "Mouse 9"
+
+-- 숨기기 패널
+L["Hotkey"] = "Hotkey"
+L["Stack"] = "Stack"
+L["Macro"] = "Macro"
+L["Hide Reset Msg"] = "Hide settings have been reset."
+
+-- 정렬 (Align)
+L["TOPLEFT"] = "Top Left"
+L["TOP"] = "Top"
+L["TOPRIGHT"] = "Top Right"
+L["LEFT"] = "Left"
+L["CENTER"] = "Center"
+L["RIGHT"] = "Right"
+L["BOTTOMLEFT"] = "Bottom Left"
+L["BOTTOM"] = "Bottom"
+L["BOTTOMRIGHT"] = "Bottom Right"
+L["Default"] = " (Default)"
+
+-- 액션바 이름
+L["Bar 1"] = "Action Bar 1"
+L["Bar 2"] = "Action Bar 2"
+L["Bar 3"] = "Action Bar 3"
+L["Bar 4"] = "Action Bar 4"
+L["Bar 5"] = "Action Bar 5"
+L["Bar 6"] = "Action Bar 6"
+L["Bar 7"] = "Action Bar 7"
+L["Bar 8"] = "Action Bar 8"
+L["Pet Bar"] = "Pet Bar"

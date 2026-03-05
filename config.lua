@@ -30,7 +30,7 @@ ns.defaults = {
     allowEmptyText = false,
     textShift = "s", textAlt = "a", textCtrl = "c",
     
-    -- [방향키 추가 복구 완료]
+    -- [방향키 설정]
     textUpArrow = (locale == "koKR") and "▲" or "UA",
     textDownArrow = (locale == "koKR") and "▼" or "DA",
     textLeftArrow = (locale == "koKR") and "◀" or "LA",
@@ -54,34 +54,33 @@ ns.defaults = {
     textNumPad8 = "N8", textNumPad9 = "N9",
 }
 
--- [숨기기 기본값 자동 생성]
-for _, bar in ipairs({
-    "ActionButton", "MultiBarBottomLeftButton", "MultiBarBottomRightButton",
-    "MultiBarRightButton", "MultiBarLeftButton", "MultiBar5Button",
-    "MultiBar6Button", "MultiBar7Button", "PetActionButton"
-}) do
+-- [숨기기 기본값 자동 생성 - 최신 프레임 이름 포함]
+ns.actionBars = {
+    "ActionButton",
+    "MultiBarBottomLeftButton", "MultiBarBottomRightButton", "MultiBarRightButton", "MultiBarLeftButton",
+    "MultiBar2Button", "MultiBar3Button", "MultiBar4Button", "MultiBar5Button", "MultiBar6Button", "MultiBar7Button",
+    "PetActionButton"
+}
+
+for _, bar in ipairs(ns.actionBars) do
     ns.defaults["hide_"..bar.."_HotKey"] = false
     ns.defaults["hide_"..bar.."_Count"] = false
     ns.defaults["hide_"..bar.."_Name"] = false
 end
 
--- [[ 2. 액션바 목록 ]] --
-ns.actionBars = {
-    "ActionButton", "MultiBarBottomLeftButton", "MultiBarBottomRightButton",
-    "MultiBarRightButton", "MultiBarLeftButton", "MultiBar5Button",
-    "MultiBar6Button", "MultiBar7Button", "PetActionButton"
-}
-
 -- [[ 3. 바 이름 매핑 ]] --
 ns.barNames = {
     ["ActionButton"] = L["Bar 1"],
+    ["MultiBar2Button"] = L["Bar 2"],
     ["MultiBarBottomLeftButton"] = L["Bar 2"],
+    ["MultiBar3Button"] = L["Bar 3"],
     ["MultiBarBottomRightButton"] = L["Bar 3"],
+    ["MultiBar4Button"] = L["Bar 4"],
     ["MultiBarRightButton"] = L["Bar 4"],
+    ["MultiBar5Button"] = L["Bar 5"],
     ["MultiBarLeftButton"] = L["Bar 5"],
-    ["MultiBar5Button"] = L["Bar 6"],
-    ["MultiBar6Button"] = L["Bar 7"],
-    ["MultiBar7Button"] = L["Bar 8"],
+    ["MultiBar6Button"] = L["Bar 6"],
+    ["MultiBar7Button"] = L["Bar 7"],
     ["PetActionButton"] = L["Pet Bar"],
 }
 
@@ -104,7 +103,6 @@ ns.keyMap = {
     { "KEY_NUMPAD6", "textNumPad6" }, { "KEY_NUMPAD7", "textNumPad7" }, { "KEY_NUMPAD8", "textNumPad8" },
     { "KEY_NUMPAD9", "textNumPad9" },
     
-    -- Hardcoded safety (예외 문자열 처리 - 방향키 추가 복구 완료)
     { "Caps Lock", "textCapslock" }, { "Capslock", "textCapslock" },
     { "Mouse Wheel Up", "textMouseWheelUp" }, { "MouseWheelUp", "textMouseWheelUp" },
     { "Mouse Wheel Down", "textMouseWheelDown" }, { "MouseWheelDown", "textMouseWheelDown" },
